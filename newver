@@ -160,7 +160,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("unpaint all")
         game.Players:Chat("unpaint all")
         wait(1)
-        game.Players:Chat("unpaint all"))
+        game.Players:Chat("unpaint all")
     elseif lowerMsg:sub(1, 9) == ".timeout " then
         local arguments = lowerMsg:sub(10)
         local letter, duration = arguments:match("(%S+)%s+(%S+)")
