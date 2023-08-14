@@ -167,9 +167,9 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         
         if letter and duration then
             duration = tonumber(duration)
+            game.Players:Chat("v!setspamdelay 0.4")
             game.Players:Chat("respawn " .. letter)
             game.Players:Chat(".spam .kill " .. letter)
-            game.Players:Chat(".setspamdelay 0.7")
             game.Players:Chat(".spam pm " .. letter .. " You have been banned for " .. duration .. " seconds.")
             game.Players:Chat(".spam setgrav " .. letter .. " -15e15")
             wait(0.2)
