@@ -154,7 +154,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
     elseif lowerMsg == ".rvis" then
         game.Players:Chat(".fixpaint")
-        wait(0.4)
+        wait(0.35)
         game.Players:Chat(".messpaint")
         wait(0.3)
         game.Players:Chat("unpaint all")
