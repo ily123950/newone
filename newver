@@ -24,7 +24,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 30.")
+game.Players:Chat("h \n \n \n \n \n \n 31.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -111,6 +111,17 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         wait(0.1)
         game.Players:Chat("h \n \n \n \n \n \n Anti gear is now off.")
         isAntigearEnabled = false
+    elseif lowerMsg == ".fix" then
+        game.Players:Chat("respawn me")
+        game.Players:Chat("reset me")
+        game.Players:Chat("reload me")
+        game.Players:Chat("fix")
+        game.Players:Chat("clr")
+        game.Players:Chat("unblind all")
+        game.Players:Chat(".fixgrav")
+        game.Players:Chat("ff all")
+        wait(5)
+        game.Players:Chat("unff all")
     elseif lowerMsg:sub(1, 10) == ".findsound" then
             local searchTerm = lowerMsg:sub(12)
             wait(0.8)
