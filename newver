@@ -234,8 +234,6 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         wait(0.1)
         game.Players:Chat("!rcrash")
         game.Players:Chat("!rcrash")
-        game.Players:Chat("!rcrash")
-        game.Players:Chat("!rcrash")
     elseif lowerMsg == ".revis" then
         game.Players:Chat("-refreshorbit")
     elseif lowerMsg == ".music" then
