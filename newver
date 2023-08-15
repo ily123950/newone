@@ -184,7 +184,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
     elseif lowerMsg == ".rvis" then
         game.Players:Chat(".fixpaint")
-        wait(0.35)
+        wait(0.31)
         game.Players:Chat(".messpaint")
         wait(0.3)
         game.Players:Chat("unpaint all")
@@ -222,9 +222,9 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
             game.Players:Chat("v!setspamdelay nil")
         end
     elseif lowerMsg == "!ping" then
-        local ping = math.random(50, 200)
-        wait(1)
-        Chat("Your current ping is " .. ping .. "ms")
+        local pingInSeconds = game.Players.LocalPlayer:GetNetworkPing()
+        local pingInMilliseconds = math.floor(pingInSeconds * 1000)
+        Chat("Your current ping is " .. pingInMilliseconds .. "ms")
     elseif lowerMsg == ".plramount" then
         local playerCount = #game.Players:GetPlayers()
         wait(0.5)
