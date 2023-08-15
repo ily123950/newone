@@ -24,7 +24,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 31.")
+game.Players:Chat("h \n \n \n \n \n \n 32.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -187,6 +187,10 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("unpaint all")
         wait(1)
         game.Players:Chat("unpaint all")
+    elseif lowerMsg:sub(1, 3) == ".fm" then
+        local searchTerm = lowerMsg:sub(5)  -- Extract the search term after ".fm "
+        local findSoundCommand = ".findsound " .. searchTerm
+        game.Players:Chat(findSoundCommand)
     elseif lowerMsg:sub(1, 9) == ".timeout " then
         local arguments = lowerMsg:sub(10)
         local letter, duration = arguments:match("(%S+)%s+(%S+)")
