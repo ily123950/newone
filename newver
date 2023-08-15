@@ -4,7 +4,7 @@ local function Chat(message)
 end
 for _, player in ipairs(game.Players:GetPlayers()) do
     if player.Name == "GAMERNOOBIKYT" then
-        local randomIdentity = math.random(15, 90)
+        local randomIdentity = math.random(15, 40)
         Chat("Owner detected, welcome user! Current identity is " .. randomIdentity .. ".")
         break
     end
@@ -24,7 +24,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 27.")
+game.Players:Chat("h \n \n \n \n \n \n 28.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -111,6 +111,21 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         wait(0.1)
         game.Players:Chat("h \n \n \n \n \n \n Anti gear is now off.")
         isAntigearEnabled = false
+    elseif lowerMsg:sub(1, 10) == ".findsound" then
+            local searchTerm = lowerMsg:sub(12)
+            wait(0.8)
+            Chat("Searching...")
+            local function CheckForSound()
+                local soundFound = game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild("Sound") ~= nil
+                
+                if soundFound then
+                    Chat("Sound was found!")
+                else
+                    wait(0.5)  -- Wait for 1 second before checking again
+                    CheckForSound()
+                end
+            end
+            CheckForSound()
     elseif lowerMsg == ".servlag" then
         game.Players:Chat("skydive me")
         wait(0.3)
