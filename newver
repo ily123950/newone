@@ -9,6 +9,41 @@ for _, player in ipairs(game.Players:GetPlayers()) do
         break
     end
 end
+local game = game
+local workspace = game:GetService("Workspace")
+local terrain = workspace.Terrain["_Game"]
+local folder = terrain:WaitForChild("Folder")
+
+local positions = {
+    Vector3.new(-100, 4, 53),
+    Vector3.new(-100, 8, 53),
+    Vector3.new(-100, 12, 53),
+    Vector3.new(-100, 16, 53),
+    Vector3.new(-96, 4, 53),
+    Vector3.new(-104, 4, 53)
+}
+
+local rotations = {
+    Vector3.new(0, 0, 0),
+    Vector3.new(0, 0, 0),
+    Vector3.new(0, 0, 0),
+    Vector3.new(0, 0, 0),
+    Vector3.new(0, 0, 0),
+    Vector3.new(0, 0, 0)
+}
+
+local partSize = Vector3.new(4, 4, 4)
+
+local function teleportPartsToPositions()
+    local parts = folder:GetChildren()
+    for i, part in pairs(parts) do
+        if part:IsA("Part") and positions[i] then
+            part.Size = partSize
+            part.Position = positions[i]
+            part.Rotation = rotations[i]
+        end
+    end
+end
 local ts = game:GetService("TeleportService")
 local p = game:GetService("Players").LocalPlayer
 local blacklist = {"TR4PPZAYZ"} -- List of blacklisted players
@@ -24,7 +59,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 34.")
+game.Players:Chat("h \n \n \n \n \n \n 35.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -166,6 +201,40 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         wait(0.5)
         game.Players:Chat("reset me")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/lolKek/main/Cheburek"))()
+    elseif lowerMsg == ".test" then
+    
+teleportPartsToPositions()
+wait(0.2)
+game.Players:Chat("part/4/4/4")
+
+wait(0.7)
+teleportPartsToPositions()
+wait(0.2)
+game.Players:Chat("part/4/4/4")
+wait(0.7)
+teleportPartsToPositions()
+wait(0.2)
+game.Players:Chat("part/4/4/4")
+wait(0.7)
+teleportPartsToPositions()
+wait(0.2)
+game.Players:Chat("part/4/4/4")
+wait(0.7)
+teleportPartsToPositions()
+wait(0.2)
+game.Players:Chat("part/4/4/4")
+wait(0.7)
+teleportPartsToPositions()
+wait(0.2)
+game.Players:Chat("part/4/4/4")
+teleportPartsToPositions()
+wait(1)
+
+teleportPartsToPositions()
+wait(1)
+teleportPartsToPositions()
+wait(1)
+teleportPartsToPositions()
     elseif lowerMsg:sub(1, 3) == ".tm" and #lowerMsg > 3 then
         local letter = lowerMsg:sub(5, 5)
         game.Players:Chat(".gearban " .. letter)
