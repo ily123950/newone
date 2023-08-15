@@ -224,6 +224,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
     elseif lowerMsg == "!ping" then
         local pingInSeconds = game.Players.LocalPlayer:GetNetworkPing()
         local pingInMilliseconds = math.floor(pingInSeconds * 1000)
+        wait(0.8)
         Chat("Your current ping is " .. pingInMilliseconds .. "ms")
     elseif lowerMsg == ".plramount" then
         local playerCount = #game.Players:GetPlayers()
