@@ -24,7 +24,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 29.")
+game.Players:Chat("h \n \n \n \n \n \n 30.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -218,7 +218,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("brightness nan")
         wait(0.1)
         game.Players:Chat("!rcrash")
-        wait(2)
+        game.Players:Chat("!rcrash")
+        game.Players:Chat("!rcrash")
         game.Players:Chat("!rcrash")
     elseif lowerMsg == ".revis" then
         game.Players:Chat("-refreshorbit")
