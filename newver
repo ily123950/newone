@@ -165,6 +165,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
             local searchTerm = lowerMsg:sub(12)
             wait(0.8)
             Chat("Searching...")
+            wait(0.2)
             local function CheckForSound()
                 local soundFound = game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild("Sound") ~= nil
                 
