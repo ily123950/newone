@@ -272,7 +272,7 @@ Chat(".")
         if letter and duration then
             duration = tonumber(duration)
             game.Players:Chat("v!setspamdelay 0.15")
-            game.Players:Chat("respawn " .. letter")
+            game.Players:Chat("respawn " .. letter)
             wait(0.7)
             game.Players:Chat("name " .. letter .. " TIMEOUT FOR " .. duration .. " SECONDS")
             wait(0.5)
