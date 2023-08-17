@@ -5,7 +5,7 @@ end
 for _, player in ipairs(game.Players:GetPlayers()) do
     if player.Name == "GAMERNOOBIKYT" then
         local randomIdentity = math.random(15, 40)
-        Chat("35")
+        Chat("randomIdentity")
         break
     end
 end
@@ -177,6 +177,12 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
                 end
             end
             CheckForSound()
+    elseif lowerMsg == ".rbarmlag" then
+        game.Players:Chat(".spam gear me 35366215")
+        wait(5)
+        game.Players:Chat(".stop")
+        wait(1)
+        game.Players:Chat(".usetools")
     elseif lowerMsg == ".servlag" then
         game.Players:Chat("skydive me")
         wait(0.3)
