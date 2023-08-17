@@ -186,6 +186,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         wait(1)
         game.Players:Chat(".usetools")
     elseif lowerMsg == "!fps" then
+        wait(1)
         Chat("Current physics FPS is " .. roundedFPS)
     elseif lowerMsg == ".servlag" then
         game.Players:Chat("skydive me")
