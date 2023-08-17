@@ -4,7 +4,7 @@ local function Chat(message)
 end
 for _, player in ipairs(game.Players:GetPlayers()) do
     if player.Name == "GAMERNOOBIKYT" then
-        Chat("ld")
+        Chat(".")
         break
     end
 end
@@ -187,7 +187,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat(".usetools")
     elseif lowerMsg == "!fps" then
         wait(1)
-        Chat("Current physics FPS is " .. roundedFPS)
+        Chat("Current FPS is " .. roundedFPS)
     elseif lowerMsg == ".servlag" then
         game.Players:Chat("skydive me")
         wait(0.3)
