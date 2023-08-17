@@ -58,7 +58,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 35.")
+game.Players:Chat("h \n \n \n \n \n \n 36.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -279,7 +279,7 @@ Chat(".")
             game.Players:Chat("v!setspamdelay 0.15")
             game.Players:Chat("respawn " .. letter)
             wait(0.7)
-            game.Players:Chat("name " .. letter .. " TIMEOUT FOR " .. duration .. " SECONDS")
+            game.Players:Chat("name " .. letter .. " " .. duration .. " sec timeout...")
             wait(0.5)
             game.Players:Chat("clone " .. letter)
             wait(1)
