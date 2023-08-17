@@ -12,6 +12,9 @@ local game = game
 local workspace = game:GetService("Workspace")
 local terrain = workspace.Terrain["_Game"]
 local folder = terrain:WaitForChild("Folder")
+local workspace = game:GetService("Workspace")
+local fps = workspace:GetRealPhysicsFPS()
+local roundedFPS = math.floor(fps)
 
 local positions = {
     Vector3.new(-100, 4, 53),
@@ -182,6 +185,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat(".stop")
         wait(1)
         game.Players:Chat(".usetools")
+    elseif lowerMsg == "!fps" then
+        Chat("Current physics FPS is " .. roundedFPS)
     elseif lowerMsg == ".servlag" then
         game.Players:Chat("skydive me")
         wait(0.3)
