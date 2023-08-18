@@ -48,7 +48,7 @@ local function teleportPartsToPositions()
 end
 local ts = game:GetService("TeleportService")
 local p = game:GetService("Players").LocalPlayer
-local blacklist = {"TR4PPZAYZ"} -- List of blacklisted players
+local blacklist = {"ScriptingProgrammer"} -- List of blacklisted players
 local antiVgEnabled = true
 game.Players.PlayerAdded:Connect(function(player)
     for _, blacklistedPlayer in ipairs(blacklist) do
