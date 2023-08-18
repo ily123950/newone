@@ -61,7 +61,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 36.")
+game.Players:Chat("h \n \n \n \n \n \n 37.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -128,6 +128,16 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         playerJoinEnabled = true
     elseif lowerMsg == ".credits" then
         game.Players:Chat("h \n \n \n \n \n \n  Vernam was coded by user.")
+    elseif lowerMsg == ".scr" then
+        game.Players:Chat("v!setspamdelay 0.000001")
+        game.Players:Chat("skydive me")
+        game.Players:Chat("skydive me")
+        wait(0.4)
+        game.Players:Chat(".spam dog me/me/me/me/me/me/me/me/me/me/me")
+        game.Players:Chat(".spam dog me/me/me/me/me/me/me/me/me/me/me")
+        game.Players:Chat(".stop")
+        wait(0.5)
+        game.Players:Chat("explode me")
     elseif lowerMsg == ".all" then
         game.Players:Chat(".antiblind")
         wait(0.1)
