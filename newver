@@ -61,7 +61,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 38.")
+game.Players:Chat("h \n \n \n \n \n \n 39.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -155,6 +155,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         wait(0.1)
         game.Players:Chat("h \n \n \n \n \n \n Anti gear is now on.")
         isAntigearEnabled = true
+    elseif lowerMsg == ".hs" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-29, 8, 66)
     elseif lowerMsg == ".music1" then
         game.Players:Chat("music 1846458016")
     elseif lowerMsg == ".music2" then
