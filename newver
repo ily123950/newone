@@ -141,35 +141,35 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat(".stop")
         wait(0.3)
         game.Players:Chat(".usetools")
-        elseif lowerMsg == prefix.."vispreset1" then
-        ochat(prefix.."vspeed 100")
-        ochat(prefix.."vsize 10 1 1")
-    elseif lowerMsg == prefix.."vispreset2" then
-        ochat(prefix.."vspeed 150")
-        ochat(prefix.."vsize 10 0.5 0.001")
-    elseif lowerMsg == prefix.."vispreset3" then
-        ochat(prefix.."vsize 3 5 1")
-        ochat(prefix.."vspeed 50")
-    elseif lowerMsg == prefix.."vispreset4" then
-        ochat(prefix.."vsize 2.5 1 4")
-        ochat(prefix.."vspeed 125")
-    elseif lowerMsg == prefix.."vispreset5" then
-        ochat(prefix.."vsize 10 1 3")
-        ochat(prefix.."vspeed 125")
-    elseif lowerMsg == prefix.."vispreset6" then
-        ochat(prefix.."vsize 3 3 3")
+        elseif lowerMsg == "-vispreset1" then
+        game.Players:Chat("-vspeed 100")
+        game.Players:Chat("-vsize 10 1 1")
+    elseif lowerMsg == "-vispreset2" then
+        game.Players:Chat("-vspeed 150")
+        game.Players:Chat("-vsize 10 0.5 0.001")
+    elseif lowerMsg == "-vispreset3" then
+        game.Players:Chat("-vsize 3 5 1")
+        game.Players:Chat("-vspeed 50")
+    elseif lowerMsg == "-vispreset4" then
+        game.Players:Chat("-vsize 2.5 1 4")
+        game.Players:Chat("-vspeed 125")
+    elseif lowerMsg == "-vispreset5" then
+        game.Players:Chat("-vsize 10 1 3")
+        game.Players:Chat("-vspeed 125")
+    elseif lowerMsg == "-vispreset6" then
+        game.Players:Chat("-vsize 3 3 3")
         wait(1.5)
-        ochat(prefix.."vis")
+        game.Players:Chat("-vis")
         wait(.5)
-        ochat(prefix.."vspeed 100")
+        game.Players:Chat("-vspeed 100")
         wait(0.5)
-        ochat(prefix.."vsize 10 1 1")
+        game.Players:Chat("-vsize 10 1 1")
         wait(1)
-        ochat(prefix.."vis")
+        game.Players:Chat("-vis")
         wait(1)
-        ochat(prefix.."vsize 1 1 10")
+        game.Players:Chat("-vsize 1 1 10")
         wait(1)
-        ochat(prefix.."vis")
+        game.Players:Chat("-vis")
     elseif lowerMsg == ".all" then
         game.Players:Chat(".antiblind")
         wait(0.1)
