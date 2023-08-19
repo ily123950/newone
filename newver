@@ -55,7 +55,7 @@ game.Players.PlayerAdded:Connect(function(player)
         if player.Name:lower() == blacklistedPlayer:lower() then
             game.Players:Chat("pm " .. player.Name .. " You are blacklisted!")
             wait(0.3)
-            game.Players:Chat(".ban " .. player.Name)
+            game.Players:Chat(".timeout " .. player.Name.. " 1600")
             break
         end
     end
@@ -132,6 +132,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("v!setspamdelay 0.000001")
         game.Players:Chat("skydive me")
         game.Players:Chat("skydive me")
+        wait(0.2)
         game.Players:Chat("freeze me")
         wait(0.4)
         game.Players:Chat(".rbarmlag")
