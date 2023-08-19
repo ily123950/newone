@@ -170,6 +170,12 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("-vsize 1 1 10")
         wait(1)
         game.Players:Chat("-vis")
+    elseif lowerMsg == ".novis" then
+        game.Players:Chat("clr")
+    elseif lowerMsg == ".revis" then
+        game.Players:Chat("clr")
+        wait(1)
+        game.Players:Chat("-vis")
     elseif lowerMsg == ".all" then
         game.Players:Chat(".antiblind")
         wait(0.1)
@@ -185,7 +191,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         wait(0.1)
         game.Players:Chat("h \n \n \n \n \n \n Anti gear is now on.")
         isAntigearEnabled = true
-    elseif lowerMsg == ".lol" then
+    elseif lowerMsg == ".vis" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/lisjfs/main/audj"))()
 wait(2)
 game.Players:Chat("-vis")
@@ -257,7 +263,7 @@ game.Players:Chat("-vis")
         game.Players:Chat(".unfreeze")
         game.Players:Chat(".house")
         game.Players:Chat("h \n \n \n \n \n \n i think server is laggy.")
-        elseif lowerMsg == ".vis" then
+        elseif lowerMsg == ".lol" then
         game.Players:Chat(".iyc god me")
         wait (0.2)
         game.Players:Chat(".nameless")
@@ -377,8 +383,6 @@ Chat(".")
         wait(0.1)
         game.Players:Chat("!rcrash")
         game.Players:Chat("!rcrash")
-    elseif lowerMsg == ".revis" then
-        game.Players:Chat("-refreshorbit")
     elseif lowerMsg == ".music" then
     game.Players:Chat("music 6819593773")
     elseif lowerMsg:sub(1, 5) == ".nuke" then
