@@ -61,7 +61,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 37.")
+game.Players:Chat("h \n \n \n \n \n \n 38.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -133,12 +133,10 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("skydive me")
         game.Players:Chat("skydive me")
         wait(0.4)
-        game.Players:Chat(".spam dog me/me/me/me/me/me/me/me/me/me/me")
-        game.Players:Chat(".spam dog me/me/me/me/me/me/me/me/me/me/me")
+        game.Players:Chat(".rbarmlag")
+        game.Players:Chat(".rbarmlag")
         wait(3)
         game.Players:Chat(".stop")
-        wait(0.5)
-        game.Players:Chat("explode me")
     elseif lowerMsg == ".all" then
         game.Players:Chat(".antiblind")
         wait(0.1)
@@ -176,6 +174,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("ff all")
         wait(5)
         game.Players:Chat("unff all")
+    elseif lowerMsg == ".silc" then
+        game.Players:Chat(".silcrash")
     elseif lowerMsg:sub(1, 10) == ".findsound" then
             local searchTerm = lowerMsg:sub(12)
             wait(0.8)
