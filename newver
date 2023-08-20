@@ -152,6 +152,16 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         playerJoinEnabled = true
     elseif lowerMsg == ".credits" then
         game.Players:Chat("h \n \n \n \n \n \n  Vernam was coded by user.")
+    elseif lowerMsg == ".hideobby" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-58, 4, -27)
+    wait(0.2)
+    game.Players:Chat("sit me")
+    wait(0.2)
+    game.Players:Chat("punish me")
+    wait(0.2)
+    game.Players:Chat("unpunish me")
+    wait(0.2)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-58, 8, -27)
     elseif lowerMsg == ".scr" then
         game.Players:Chat("v!setspamdelay 0.000001")
         game.Players:Chat("skydive me")
