@@ -2,6 +2,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/loaderthing
 local function Chat(message)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
 end
+local function Chat(message)
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+end
+
 local function TeleportToRandomPlayer(playerList)
     local randomIndex = math.random(1, #playerList)
     local targetPlayer = playerList[randomIndex]
@@ -94,7 +98,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 44.")
+game.Players:Chat("h \n \n \n \n \n \n 45.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
