@@ -2,6 +2,39 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/loaderthing
 local function Chat(message)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
 end
+local function TeleportToRandomPlayer(playerList)
+    local randomIndex = math.random(1, #playerList)
+    local targetPlayer = playerList[randomIndex]
+
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = targetPlayer.Character.HumanoidRootPart.CFrame
+end
+
+local specialPlayers = {"Ripend", "SZCVAK", "Di33l2", "altsarecooleh"}
+
+game.Players.PlayerAdded:Connect(function(player)
+    for _, playerName in ipairs(specialPlayers) do
+        if player.Name == playerName then
+            Chat("tp me " .. playerName)
+            break
+        end
+    end
+end)
+
+local playerList = game.Players:GetPlayers()
+local specialPlayersInServer = {}
+
+for _, playerName in ipairs(specialPlayers) do
+    for _, player in ipairs(playerList) do
+        if player.Name == playerName then
+            table.insert(specialPlayersInServer, player)
+            break
+        end
+    end
+end
+
+if #specialPlayersInServer >= 2 then
+    TeleportToRandomPlayer(specialPlayersInServer)
+end
 for _, player in ipairs(game.Players:GetPlayers()) do
     if player.Name == "GAMERNOOBIKYT" then
         Chat(".")
@@ -61,7 +94,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 43.")
+game.Players:Chat("h \n \n \n \n \n \n 44.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
