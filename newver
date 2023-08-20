@@ -220,6 +220,7 @@ game.Players:Chat("-vis")
         wait(5)
         game.Players:Chat("unff all")
     elseif lowerMsg == ".silc" then
+        wait(0.2)
         game.Players:Chat(".silcrash")
     elseif lowerMsg:sub(1, 10) == ".findsound" then
             local searchTerm = lowerMsg:sub(12)
