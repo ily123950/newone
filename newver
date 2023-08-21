@@ -94,7 +94,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 47.")
+game.Players:Chat("h \n \n \n \n \n \n 48.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -218,6 +218,20 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("-vis")
         wait(1)
         game.Players:Chat("-vsize 1 1 10")
+        wait(1)
+        game.Players:Chat("-vis")
+    elseif lowerMsg == "-vispreset6" then
+        game.Players:Chat("-vsize 5 1 1")
+        wait(1.5)
+        game.Players:Chat("-vis")
+        wait(.5)
+        game.Players:Chat("-vspeed 70")
+        wait(0.5)
+        game.Players:Chat("-vsize 1 5 1")
+        wait(1)
+        game.Players:Chat("-vis")
+        wait(1)
+        game.Players:Chat("-vsize 1 1 5")
         wait(1)
         game.Players:Chat("-vis")
     elseif lowerMsg == ".novis" then
