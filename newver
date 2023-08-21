@@ -95,7 +95,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 48.")
+game.Players:Chat("h \n \n \n \n \n \n 49.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
