@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/laos/main/Latros"))()
+wait(2)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/loaderthing/main/jk"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/colorAPI/main/api"))()
 local playerList = game.Players:GetPlayers()
@@ -95,7 +97,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 49.")
+game.Players:Chat("h \n \n \n \n \n \n 50.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
