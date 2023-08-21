@@ -220,7 +220,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("-vsize 1 1 10")
         wait(1)
         game.Players:Chat("-vis")
-    elseif lowerMsg == "-vispreset6" then
+    elseif lowerMsg == "-vispreset7" then
         game.Players:Chat("-vsize 5 1 1")
         wait(1.5)
         game.Players:Chat("-vis")
