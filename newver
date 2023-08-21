@@ -1,4 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/loaderthing/main/jk"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/colorAPI/main/api"))()
 local playerList = game.Players:GetPlayers()
 local specialPlayersInServer = {}
 local function TeleportToRandomPlayer(playerList)
