@@ -160,7 +160,6 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
             local targetPosition = randomPlayer.Character.HumanoidRootPart.Position
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
      end 
-end
     elseif lowerMsg == ".hideobby" then
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57, 4, -29)
     wait(0.4)
