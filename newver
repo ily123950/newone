@@ -85,7 +85,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 46.")
+game.Players:Chat("h \n \n \n \n \n \n 47.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -152,6 +152,13 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         playerJoinEnabled = true
     elseif lowerMsg == ".credits" then
         game.Players:Chat("h \n \n \n \n \n \n  Vernam was coded by user.")
+        if lowerMsg == ".tr" then
+        local players = game.Players:GetPlayers()
+        local randomPlayer = players[math.random(1, #players)]
+        
+        if randomPlayer and randomPlayer.Character then
+            local targetPosition = randomPlayer.Character.HumanoidRootPart.Position
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
     elseif lowerMsg == ".hideobby" then
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57, 4, -29)
     wait(0.4)
