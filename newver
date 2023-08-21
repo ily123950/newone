@@ -250,6 +250,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat(".nok")
         wait(0.1)
         game.Players:Chat(".antikill")
+    elseif lowerMsg == ".bp" then
+        game.Players:Chat("gear me 18474459")
     elseif lowerMsg == ".antigear" then
         game.Players:Chat(".spam ungear/others")
         wait(0.1)
