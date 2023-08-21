@@ -1,6 +1,15 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/loaderthing/main/jk"))()
 local playerList = game.Players:GetPlayers()
 local specialPlayersInServer = {}
+local function TeleportToRandomPlayer(playerList)
+    local randomIndex = math.random(1, #playerList)
+    local targetPlayer = playerList[randomIndex]
+
+    if targetPlayer and targetPlayer.Character then
+        local targetPosition = targetPlayer.Character.HumanoidRootPart.Position
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
+    end
+end
 local function Chat(message)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
 end
@@ -152,14 +161,9 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         playerJoinEnabled = true
     elseif lowerMsg == ".credits" then
         game.Players:Chat("h \n \n \n \n \n \n  Vernam was coded by user.")
-        if lowerMsg == ".tr" then
+    elseif lowerMsg == ".tr" then
         local players = game.Players:GetPlayers()
-        local randomPlayer = players[math.random(1, #players)]
-        
-    elseif randomPlayer and randomPlayer.Character then
-            local targetPosition = randomPlayer.Character.HumanoidRootPart.Position
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
-     end 
+        TeleportToRandomPlayer(players)
     elseif lowerMsg == ".hideobby" then
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57, 4, -29)
     wait(0.4)
