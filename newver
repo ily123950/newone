@@ -241,6 +241,10 @@ game.Players:Chat("-vis")
         game.Players:Chat("music 9047050075")
     elseif lowerMsg == ".music3" then
         game.Players:Chat("music 7029024726")
+    elseif lowerMsg == ".music4" then
+        game.Players:Chat("music 6953866301")
+    elseif lowerMsg == ".music5" then
+        game.Players:Chat("music 6805032026")
     elseif lowerMsg == ".unantigear" then
         game.Players:Chat(".stop")
         wait(0.1)
