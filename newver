@@ -226,8 +226,6 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         wait(1)
         game.Players:Chat("-vis")
     elseif lowerMsg == "-vispreset7" then
-        game.Players:Chat(".novis")
-        wait(1)
         game.Players:Chat("-vsize 5 1 1")
         wait(1.5)
         game.Players:Chat("-vis")
