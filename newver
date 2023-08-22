@@ -181,6 +181,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57, 12, -29)
     wait(0.8)
     game.Players:Chat("respawn me")
+    elseif lowerMsg == ".clr dred" then
+    game.Players:Chat(".clr 153 153 0")
     elseif lowerMsg == ".scr" then
         game.Players:Chat("v!setspamdelay 0.000001")
         game.Players:Chat("skydive me")
