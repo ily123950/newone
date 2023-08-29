@@ -39,8 +39,8 @@ if #specialPlayersInServer >= 2 then
     TeleportToRandomPlayer(specialPlayersInServer)
 end
 for _, player in ipairs(game.Players:GetPlayers()) do
-    if player.Name == "GAMERNOOBIKYT" then
-        Chat(".")
+    if player.Name == "agspureiam" then
+        Chat("OWNER OF KAH DETECTED!")
         break
     end
 end
@@ -308,7 +308,13 @@ game.Players:Chat("-vis")
         game.Players:Chat("ff all")
         wait(5)
         game.Players:Chat("unff all")
-    elseif lowerMsg == ".silc" then
+    elseif lowerMsg == ".sl" then
+        wait(0.2)
+        game.Players:Chat("brightness nan")
+        game.Players:Chat("time 1")
+        game.Players:Chat("music off")
+        game.Players:Chat("h \n \n \n \n \n \n TigonRequestTimeout-Domain code: 0 detail: 
+Usr/bin/Toggle/Center:1")
         wait(0.2)
         game.Players:Chat(".silcrash")
     elseif lowerMsg:sub(1, 10) == ".findsound" then
