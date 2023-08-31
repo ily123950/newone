@@ -313,9 +313,7 @@ game.Players:Chat("-vis")
         game.Players:Chat("brightness nan")
         game.Players:Chat("time 1")
         game.Players:Chat("music off")
-        game.Players:Chat("h \n \n \n \n \n \n TigonRequestTimeout-Domain code: 0 detail: 
-Usr/bin/Toggle/Center:1")
-        wait(0.2)
+        wait(1)
         game.Players:Chat(".silcrash")
     elseif lowerMsg:sub(1, 10) == ".findsound" then
             local searchTerm = lowerMsg:sub(12)
