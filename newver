@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/laos/main/Latros"))()
 wait(2)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/newlos/main/json"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/As/main/R"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/colorAPI/main/api"))()
 local playerList = game.Players:GetPlayers()
 local specialPlayersInServer = {}
