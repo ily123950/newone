@@ -257,6 +257,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("-vis")
     elseif lowerMsg == ".load" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/D/main/Hx"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Antijail/main/Hi"))()
     elseif lowerMsg == ".novis" then
         game.Players:Chat("clr")
     elseif lowerMsg == ".revis" then
