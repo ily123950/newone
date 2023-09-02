@@ -99,7 +99,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 51.")
+game.Players:Chat("h \n \n \n \n \n \n 52.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -255,6 +255,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("-vsize 1 1 9")
         wait(1)
         game.Players:Chat("-vis")
+    elseif lowerMsg == ".load" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/D/main/Hx"))()
     elseif lowerMsg == ".novis" then
         game.Players:Chat("clr")
     elseif lowerMsg == ".revis" then
