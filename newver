@@ -1,4 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/laos/main/Latros"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/spam/main/sc"))()
 wait(2)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/As/main/R"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/colorAPI/main/api"))()
