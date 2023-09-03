@@ -99,7 +99,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 52.")
+game.Players:Chat("h \n \n \n \n \n \n 53.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -257,7 +257,10 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("-vis")
     elseif lowerMsg == ".load" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/D/main/Hx"))()
+        wait(1)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Antijail/main/Hi"))()
+        wait(1)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Boichik/main/s"))()
     elseif lowerMsg == ".novis" then
         game.Players:Chat("clr")
     elseif lowerMsg == ".revis" then
