@@ -259,7 +259,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/D/main/Hx"))()
         wait(1)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Antijail/main/Hi"))() 
-    elseif lowerMsg == ".check"
+    elseif lowerMsg == ".check" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/F/main/W"))()
     elseif lowerMsg == ".calc" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/aaaaj/main/hiu"))()
