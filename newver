@@ -166,6 +166,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         playerJoinEnabled = true
     elseif lowerMsg == ".credits" then
         game.Players:Chat("h \n \n \n \n \n \n  Vernam was coded by user.")
+    elseif lowerMsg == ".ra" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/SjsS/main/D"))()
     elseif lowerMsg == ".tr" then
         local players = game.Players:GetPlayers()
         TeleportToRandomPlayer(players)
