@@ -298,6 +298,8 @@ wait(2)
 game.Players:Chat("-vis")
     elseif lowerMsg == ".hs" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-29, 8, 66)
+    elseif lowerMsg == ".lm" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Lsfo/main/pmove"))()
     elseif lowerMsg == ".music1" then
         game.Players:Chat("music 1846458016")
     elseif lowerMsg == ".music2" then
