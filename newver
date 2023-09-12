@@ -1,7 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/laos/main/Latros"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/spam/main/sc"))()
 wait(2)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Gs/main/S"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/As/main/R"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/colorAPI/main/api"))()
 local playerList = game.Players:GetPlayers()
@@ -298,6 +297,8 @@ wait(2)
 game.Players:Chat("-vis")
     elseif lowerMsg == ".hs" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-29, 8, 66)
+    elseif lowerMsg == ".jvis" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Gs/main/S"))()
     elseif lowerMsg == ".lm" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Lsfo/main/pmove"))()
     elseif lowerMsg == ".music1" then
