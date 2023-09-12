@@ -99,7 +99,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 55.")
+game.Players:Chat("h \n \n \n \n \n \n 56.")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -292,7 +292,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         wait(0.1)
         game.Players:Chat("h \n \n \n \n \n \n Anti gear is now on.")
         isAntigearEnabled = true
-    elseif lowerMsg == ".vis" then
+    elseif lowerMsg == ".old" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/lisjfs/main/audj"))()
 wait(2)
 game.Players:Chat("-vis")
