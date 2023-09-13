@@ -256,6 +256,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("-vsize 1 1 9")
         wait(1)
         game.Players:Chat("-vis")
+    elseif lowerMsg == ".rb" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/rb/main/his"))()
     elseif lowerMsg == ".load" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/D/main/Hx"))()
         wait(1)
