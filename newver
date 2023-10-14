@@ -27,12 +27,11 @@ end
 
 local specialPlayers = {"Ripend", "SZCVAK", "Di33l2", "altsarecooleh"}
 
-
-
-for _, player in ipairs(game.Players:GetPlayers()) do
-    for _, specialName in ipairs(specialPlayers) do
-        if player.Name == specialName then
-            NotifyGUI("Friend detected: " .. specialName, 5) -- Вывести сообщение в консоль
+for _, playerName in ipairs(specialPlayers) do
+    for _, player in ipairs(playerList) do
+        if player.Name == playerName then
+            table.insert(specialPlayersInServer, player)
+            break
         end
     end
 end
@@ -42,7 +41,7 @@ if #specialPlayersInServer >= 2 then
     TeleportToRandomPlayer(specialPlayersInServer)
 end
 for _, player in ipairs(game.Players:GetPlayers()) do
-    if player.Name == "tedt" then
+    if player.Name == "agspureiam" then
         Chat("OWNER OF KAH DETECTED!")
         break
     end
@@ -495,7 +494,7 @@ NotifyGUI("Notify: script is very buggy.", 5)
         local pingInSeconds = game.Players.LocalPlayer:GetNetworkPing()
         local pingInMilliseconds = math.floor(pingInSeconds * 1000)
         wait(0.8)
-        NotifyGUI("Your current ping is " .. pingInMilliseconds .. "ms", 5)
+        NotifyGUI("Your current ping is " .. pingInMilliseconds .. " ms", 5)
     elseif lowerMsg == ".plramount" then
         local playerCount = #game.Players:GetPlayers()
         wait(0.5)
