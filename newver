@@ -1,7 +1,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/laos/main/Latros"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/spam/main/sc"))()
 wait(2)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/As/main/R"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/guiAPI/main/Api"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/colorAPI/main/api"))()
 local playerList = game.Players:GetPlayers()
 local specialPlayersInServer = {}
@@ -27,20 +27,22 @@ end
 
 local specialPlayers = {"Ripend", "SZCVAK", "Di33l2", "altsarecooleh"}
 
-for _, playerName in ipairs(specialPlayers) do
-    for _, player in ipairs(playerList) do
-        if player.Name == playerName then
-            table.insert(specialPlayersInServer, player)
-            break
+local specialPlayers = {"Ripend", "SZCVAK", "Di33l2", "altsarecooleh"}
+
+for _, player in ipairs(game.Players:GetPlayers()) do
+    for _, specialName in ipairs(specialPlayers) do
+        if player.Name == specialName then
+            NotifyGUI("Friend detected: " .. specialName, 5) -- Вывести сообщение в консоль
         end
     end
 end
+
 
 if #specialPlayersInServer >= 2 then
     TeleportToRandomPlayer(specialPlayersInServer)
 end
 for _, player in ipairs(game.Players:GetPlayers()) do
-    if player.Name == "agspureiam" then
+    if player.Name == "tedt" then
         Chat("OWNER OF KAH DETECTED!")
         break
     end
@@ -98,7 +100,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-game.Players:Chat("h \n \n \n \n \n \n 56.")
+NotifyGUI("Loaded, hello " .. p.DisplayName .. ", 5)
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
@@ -299,6 +301,8 @@ wait(2)
 game.Players:Chat("-vis")
     elseif lowerMsg == ".hs" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-29, 8, 66)
+    elseif lowerMsg == ".getver" then
+    NotifyGUI("Current version is 0.56.0", 5)
     elseif lowerMsg == ".jvis" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Gs/main/S"))()
     elseif lowerMsg == ".lm" then
@@ -319,6 +323,7 @@ game.Players:Chat("-vis")
         game.Players:Chat("h \n \n \n \n \n \n Anti gear is now off.")
         isAntigearEnabled = false
     elseif lowerMsg == ".fix" then
+        NotifyGUI("HARDFIX", 3)
         game.Players:Chat("respawn me")
         game.Players:Chat("reset me")
         game.Players:Chat("reload me")
@@ -360,7 +365,7 @@ game.Players:Chat("-vis")
         game.Players:Chat(".usetools")
     elseif lowerMsg == "!fps" then
         wait(1)
-        Chat("Current FPS is " .. roundedFPS)
+        NotifyGUI("Current FPS is " .. roundedFPS, 5)
     elseif lowerMsg == ".servlag" then
         game.Players:Chat("skydive me")
         wait(0.3)
@@ -418,7 +423,7 @@ wait(1)
 teleportPartsToPositions()
 wait(1)
 teleportPartsToPositions()
-Chat(".")
+NotifyGUI("Notify: script is very buggy.", 5)
     elseif lowerMsg:sub(1, 3) == ".tm" and #lowerMsg > 3 then
         local letter = lowerMsg:sub(5, 5)
         game.Players:Chat(".gearban " .. letter)
@@ -434,6 +439,7 @@ Chat(".")
         wait(0.3)
         game.Players:Chat("tp " .. letter .. " me")
     elseif lowerMsg == ".rej" then
+        NotifyGUI("Rejoining...", 10)
         ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
     elseif lowerMsg == ".rvis" then
         game.Players:Chat(".fixpaint")
@@ -489,7 +495,7 @@ Chat(".")
         local pingInSeconds = game.Players.LocalPlayer:GetNetworkPing()
         local pingInMilliseconds = math.floor(pingInSeconds * 1000)
         wait(0.8)
-        Chat("Your current ping is " .. pingInMilliseconds .. "ms")
+        NotifyGUI("Your current ping is " .. pingInMilliseconds .. "ms", 5)
     elseif lowerMsg == ".plramount" then
         local playerCount = #game.Players:GetPlayers()
         wait(0.5)
