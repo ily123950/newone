@@ -27,7 +27,7 @@ end
 
 local specialPlayers = {"Ripend", "SZCVAK", "Di33l2", "altsarecooleh"}
 
-local specialPlayers = {"Ripend", "SZCVAK", "Di33l2", "altsarecooleh"}
+
 
 for _, player in ipairs(game.Players:GetPlayers()) do
     for _, specialName in ipairs(specialPlayers) do
