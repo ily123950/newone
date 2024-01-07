@@ -99,7 +99,7 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
-NotifyGUI("Loaded, hello " .. p.DisplayName .. ", 5)
+NotifyGUI("Loaded, hello " .. p.DisplayName .. ", 5")
 game.Players:Chat("!gearannounce disable")
 
 local playerJoinEnabled = true
